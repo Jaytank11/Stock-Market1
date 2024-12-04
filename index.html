@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    
+    <title>Stock Market Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f1f1f1;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        td {
+            color: #333;
+        }
+
+        .positive-change {
+            color: green;
+        }
+
+        .negative-change {
+            color: red;
+        }
+
+        .volume, .market-cap {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Stock Market Data</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Symbol</th>
+                <th>Price (USD)</th>
+                <th>Change (%)</th>
+                <th>Volume</th>
+                <th>Market Cap (Billion USD)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Apple</td>
+                <td>AAPL</td>
+                <td>175.32</td>
+                <td class="positive-change">+1.5%</td>
+                <td class="volume">72.5M</td>
+                <td class="market-cap">2.8T</td>
+            </tr>
+            <tr>
+                <td>Microsoft</td>
+                <td>MSFT</td>
+                <td>332.44</td>
+                <td class="negative-change">-0.2%</td>
+                <td class="volume">21.7M</td>
+                <td class="market-cap">2.4T</td>
+            </tr>
+            <tr>
+                <td>Amazon</td>
+                <td>AMZN</td>
+                <td>142.18</td>
+                <td class="positive-change">+2.1%</td>
+                <td class="volume">30.1M</td>
+                <td class="market-cap">1.5T</td>
+            </tr>
+            <tr>
+                <td>Tesla</td>
+                <td>TSLA</td>
+                <td>240.55</td>
+                <td class="negative-change">-0.5%</td>
+                <td class="volume">35.3M</td>
+                <td class="market-cap">770B</td>
+            </tr>
+            <tr>
+                <td>Google</td>
+                <td>GOOGL</td>
+                <td>136.50</td>
+                <td class="positive-change">+0.7%</td>
+                <td class="volume">25.8M</td>
+                <td class="market-cap">1.7T</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
